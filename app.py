@@ -12,7 +12,7 @@ def about():
 @app.route("/listar_livros")
 def listar_livros():
     with db_session:
-    
+
         livros = Livros.select() 
         return render_template("listar_livros.html", livros=livros)
 
