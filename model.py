@@ -12,3 +12,5 @@ class Livros(db.Entity):
 
 db.bind(provider='sqlite', filename='person.db', create_db=True)
 db.generate_mapping(create_tables=True)
+
+
