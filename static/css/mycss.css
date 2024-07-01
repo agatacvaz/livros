@@ -1,0 +1,12 @@
+body {
+  /*background-image: url("../imagens/biblio.jpg");*/
+
+  background-color: rgb(226, 215, 236);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+  font-size: 50px;
+  text-align: center;
+  color: rgb(67, 14, 117);
+}

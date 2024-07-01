@@ -1,0 +1,22 @@
+<!doctype html>
+<link rel="stylesheet" href="mycss.css">
+<head>
+    <title>Sistema de listagem de livros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mycss.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1 id='title'>Book-list</h1>
+    <a href ="{{ url_for("home") }}">Página inicial</a> | 
+    <a href ="{{ url_for("about") }}">Informações</a> | 
+    <a href ="{{ url_for("listar_livros") }}">Listagem de livros</a>
+    <hr />
+
+    <section class="content">
+        <header> {% block header %}{% endblock %} </header>
+
+        {% block content %}{% endblock %}
+    </section>
+
+</body>

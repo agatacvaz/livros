@@ -1,0 +1,35 @@
+{% extends 'main_template.html' %}
+
+{% block header %}
+<h1>{% block title %}Cadastrar livros{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<form action="adicionar_livro">
+    <p>
+        Nome do livro: <input type="text" name="nome" value="O Pricípe cruel">
+    </p>
+    <p>
+        Autor: <input type="text" name="autor" value="Holly Black">
+    </p>
+    <p>
+        Ano de publicação: <input type="text" name="ano" value="2018">
+    </p>
+    <p>
+        Gênero: <input type="text" name="genero" value="Literatura fantástica">
+    </p>
+    <p>
+       Classificação: <input type="text" name="classificacao" value="18">
+    </p>
+    <p>
+        Avaliação: <input type="text" name="avaliacao" value="4,8/5">
+    </p>
+
+
+
+
+    <button>Adicionar</button>
+</form>
+
+{% endblock %}
